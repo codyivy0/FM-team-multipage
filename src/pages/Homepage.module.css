@@ -3,9 +3,14 @@
   text-align: center;
   background-image: url(/bg-pattern-home-2.svg);
   background-repeat: no-repeat;
-  height: 22rem;
+  height: 27rem;
   background-position: bottom;
   padding-inline: 3rem;
+}
+.findContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 h1 {
@@ -43,6 +48,7 @@ p {
   }
   .findContent {
     display: flex;
+    flex-direction: row;
     background-image: url(/bg-pattern-home-1.svg);
     background-repeat: no-repeat;
     background-position: left -100px top 56px;
