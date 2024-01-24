@@ -16,7 +16,10 @@ const Navigation = () => {
       <div className={`${styles.overlay} ${isOpen ? styles.open : ""}`} />
 
       <div className={styles.navGroup}>
-        <img src="/logo.svg" alt="my team logo" className={styles.navLogo} />
+        <NavLink to="/">
+          <img src="/logo.svg" alt="my team logo" className={styles.navLogo} />
+        </NavLink>
+
         <section className={styles.desktopNav}>
           <NavLink
             to="/"
