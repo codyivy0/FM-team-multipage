@@ -2,9 +2,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 2.5rem;
+  padding: 3rem 1.8rem;
   font-size: 18px;
-  border-bottom: 1px solid var(--clr-border);
+
 }
 
 .navLogo {
@@ -82,6 +82,7 @@ a {
   nav {
     justify-content: space-between;
     gap: 1rem;
+    padding: 3.5rem 2.5rem;
   }
   .desktopNav, .btn {
     display: flex;

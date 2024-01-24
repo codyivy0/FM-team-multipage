@@ -1,0 +1,95 @@
+.section_find {
+  color: white;
+  text-align: center;
+  background-image: url(/bg-pattern-home-2.svg);
+  background-repeat: no-repeat;
+  height: 22rem;
+  background-position: bottom;
+  padding-inline: 3rem;
+}
+
+h1 {
+  font-size: 40px;
+
+  margin: 0;
+  line-height: 1;
+  margin-block: 1rem;
+}
+
+p {
+  font-size: 15px;
+
+  margin: 0;
+  line-height: 2;
+}
+
+.accent {
+  color: var(--clr-accent);
+}
+
+@media (min-width: 600px) {
+  .section_find {
+    height: 30rem;
+  }
+  h1 {
+    font-size: 64px;
+    padding-inline: 5rem;
+  }
+}
+@media (min-width: 800px) {
+  .section_find {
+    background-position: bottom right;
+    padding: 0;
+  }
+  .findContent {
+    display: flex;
+    background-image: url(/bg-pattern-home-1.svg);
+    background-repeat: no-repeat;
+    background-position: left -100px top 56px;
+    align-items: center;
+    padding-inline: 2rem;
+  }
+  h1 {
+    font-size: 82px;
+    margin-left: 1rem;
+    padding: 2rem;
+    flex: 1;
+    text-align: left;
+  }
+  p {
+    flex: 1;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 100px;
+    padding: 0;
+    margin-right: 5rem;
+  }
+  .section_find {
+    background-position: bottom right 205px;
+    height: 27rem;
+  }
+  .findContent {
+    padding-inline: 7rem;
+    background-position: left -100px top;
+  }
+  p {
+    font-size: 18px;
+    position: relative;
+  }
+  p::before {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: var(--clr-line);
+    display: block;
+    position: absolute;
+    top: -50px;
+  }
+}
