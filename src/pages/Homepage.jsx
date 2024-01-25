@@ -56,6 +56,60 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+
+      {/* Social Proof Section */}
+      <section className={styles.section_social}>
+        <h1 className={styles.socialHeader}>
+          Delivering real results for top companies. Some of our
+          <span className={styles.clrLightGreen}> success stories.</span>
+        </h1>
+        <div className={styles.socialCardContainer}>
+          <div className={styles.socialCard}>
+            <p>
+              &quot;The team perfectly fit the specialized skill set required.
+              They focused on the most essential features helping us launch the
+              platform eight months faster than planned.&quot;
+            </p>
+            <h3 className={styles.clrLightGreen}>Kady Baker</h3>
+            <small>Product Manager at Bookmark</small>
+            <img
+              className={styles.socialAvatar}
+              src="/avatar-kady.jpg"
+              alt="Kady Baker product manager at Bookmark"
+            />
+          </div>
+
+          <div className={styles.socialCard}>
+            <p>
+              &quot;We needed to automate our entire onboarding process. The
+              team came in and built out the whole journey. Since going live,
+              user retention has gone through the roof!&quot;
+            </p>
+            <h3 className={styles.clrLightGreen}>Aiysha Reese</h3>
+            <small>Founder of Manage</small>
+            <img
+              className={styles.socialAvatar}
+              src="/avatar-aiysha.jpg"
+              alt="Aiysha reese founder of Manage "
+            />
+          </div>
+
+          <div className={styles.socialCard}>
+            <p>
+              &quot;Amazing. Our team helped us build an app that delivered a
+              new experience for hiring a physio. The launch was an instant
+              success with 100k downloads in the first month.&quot;
+            </p>
+            <h3 className={styles.clrLightGreen}>Arthur Clarke</h3>
+            <small>Co-founder of MyPhysio</small>
+            <img
+              className={styles.socialAvatar}
+              src="/avatar-arthur.jpg"
+              alt="Arthur Clarke Co-founder of MyPhysio"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 };
