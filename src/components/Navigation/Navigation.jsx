@@ -42,7 +42,7 @@ const Navigation = () => {
 
       <button onClick={toggleMenu} className={styles.toggleMenu}>
         {isOpen ? (
-          <img src="/icon-close.svg" alt="close menu" />
+          ''
         ) : (
           <img src="/icon-menu.svg" alt="open menu" />
         )}
@@ -53,14 +53,14 @@ const Navigation = () => {
         <button onClick={toggleMenu} className={styles.toggleMenu}>
           <img src="/icon-close.svg" alt="close menu" />
         </button>
-        <ul>
+        <ul className={styles.mobileNavList}>
           <li>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? styles.active : "none")}
               onClick={toggleMenu}
             >
-              Home
+              home
             </NavLink>
           </li>
           <li>
@@ -69,10 +69,10 @@ const Navigation = () => {
               className={({ isActive }) => (isActive ? styles.active : "none")}
               onClick={toggleMenu}
             >
-              About
+              about
             </NavLink>
           </li>
-          <li>
+          <li className={styles.mobileContactBtn}>
             <NavLink to="/contact" onClick={toggleMenu}>
               <Button>contact us</Button>
             </NavLink>
