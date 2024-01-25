@@ -1,3 +1,5 @@
+import Footer from "../components/Footer/Footer";
+import GetStarted from "../components/GetStarted/GetStarted";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -12,6 +14,8 @@ const About = () => {
           products and experiences. We&apos;ll bring those teams to you.
         </p>
       </section>
+      <GetStarted />
+      <Footer />
     </>
   );
 };

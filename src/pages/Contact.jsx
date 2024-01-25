@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import styles from "./Contact.module.css";
 const Contact = () => {
   return (
@@ -20,10 +21,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>
-          Form stuff
-        </div>
+        <div>Form stuff</div>
       </section>
+
+      <Footer />
     </>
   );
 };

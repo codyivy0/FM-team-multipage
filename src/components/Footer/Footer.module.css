@@ -1,0 +1,141 @@
+
+.section_footer {
+    background-color: var(--clr-bg-veryDark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+  }
+  
+  .miniNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .miniNav img {
+    width: 96px;
+  }
+  .miniNavLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  .contactInfoContainer {
+    text-align: center;
+    color: var(--clr-text-gray);
+    line-height: 0.7;
+  }
+  
+  .copyrightContainer {
+    color: var(--clr-text-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .active {
+    color: var(--clr-accent);
+  }
+  .accent {
+    color: var(--clr-accent);
+  }
+  .clrLightGreen {
+    color: var(--clr-line);
+  }
+
+  @media (min-width: 600px) {
+    .section_footer {
+      padding: 0;
+      text-align: left;
+      align-items: normal;
+      padding: 3rem 2rem;
+    }
+    .footerGroup1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contactInfoContainer {
+      text-align: right;
+    }
+    .copyrightContainer {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  @media (min-width: 800px) {
+    .section_footer {
+      flex-direction: row;
+      padding: 2rem 6rem;
+      justify-content: space-between;
+    }
+    .copyrightContainer {
+      flex-direction: column;
+      align-items: end;
+    }
+    .miniNav {
+      align-items: normal;
+    }
+    .miniNav img {
+      width: 160px;
+    }
+    .footerGroup1 {
+      gap: 1rem;
+    }
+    .contactInfoContainer {
+      text-align: left;
+    }
+  }
+  @media (min-width: 1100px) {
+    .footerGroup1 {
+        gap: 9rem;
+    }
+  }
+  /* @media (min-width: 1100px) {
+    .findHeader {
+      font-size: 100px;
+      padding: 0;
+      margin-right: 5rem;
+    }
+    .section_find {
+      background-position: bottom right 205px;
+      height: 27rem;
+    }
+    .findContent {
+      padding-inline: 7rem;
+      background-position: left -100px top;
+    }
+    .findText {
+      font-size: 18px;
+      position: relative;
+    }
+    .findText::before {
+      content: "";
+      height: 4px;
+      width: 50px;
+      background-color: var(--clr-line);
+      display: block;
+      position: absolute;
+      top: -50px;
+    }
+  
+    .section_social {
+      padding: 8rem 8rem;
+    }
+    .socialHeader {
+      font-size: 48px;
+      padding-inline: 5rem;
+    }
+  
+    .section_getStarted h1 {
+      font-size: 48px;
+    }
+  } */
