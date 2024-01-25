@@ -1,4 +1,6 @@
+import Button from "../components/Button/Button";
 import styles from "./Homepage.module.css";
+import { NavLink } from "react-router-dom";
 const Homepage = () => {
   return (
     <>
@@ -109,6 +111,15 @@ const Homepage = () => {
             />
           </div>
         </div>
+      </section>
+
+      {/* Get started Section */}
+
+      <section className={styles.section_getStarted}>
+        <h1>Ready to get started?</h1>
+        <NavLink to="/contact">
+          <Button className={styles.contactBtnGreen}>contact us</Button>
+        </NavLink>
       </section>
     </>
   );
