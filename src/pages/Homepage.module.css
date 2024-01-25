@@ -129,7 +129,7 @@
 .section_getStarted {
   background-color: var(--clr-accent);
   color: var(--clr-bg-dark);
-  background-image: url('/bg-pattern-home-6-about-5.svg');
+  background-image: url("/bg-pattern-home-6-about-5.svg");
   background-repeat: no-repeat;
   background-position: bottom left;
   display: flex;
@@ -151,6 +151,52 @@
   color: white !important;
 }
 
+.section_footer {
+  background-color: var(--clr-bg-veryDark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 1.5rem;
+}
+
+.miniNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.miniNav img {
+  width: 96px;
+}
+.miniNavLinks {
+  display: flex;
+  gap: 1rem;
+}
+.contactInfoContainer {
+  text-align: center;
+  color: var(--clr-text-gray);
+  line-height: 0.7;
+}
+
+.copyrightContainer {
+  color: var(--clr-text-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.active {
+  color: var(--clr-accent);
+}
 .accent {
   color: var(--clr-accent);
 }
@@ -187,6 +233,23 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 4rem 2rem;
+  }
+  .section_footer {
+    padding: 0;
+    text-align: left;
+    align-items: normal;
+    padding: 3rem 2rem;
+  }
+  .footerGroup1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contactInfoContainer {
+    text-align: right;
+  }
+  .copyrightContainer {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media (min-width: 800px) {
@@ -247,6 +310,27 @@
   }
   .section_getStarted h1 {
     font-size: 40px;
+  }
+  .section_footer {
+    flex-direction: row;
+    padding: 2rem 6rem;
+    justify-content: space-between;
+  }
+  .copyrightContainer {
+    flex-direction: column;
+    align-items: end;
+  }
+  .miniNav {
+    align-items: normal;
+  }
+  .miniNav img {
+    width: 160px;
+  }
+  .footerGroup1 {
+    gap: 4rem;
+  }
+  .contactInfoContainer {
+    text-align: left;
   }
 }
 

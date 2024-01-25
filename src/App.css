@@ -4,14 +4,14 @@
   --clr-bg: #014e56;
   --clr-bg-light: #2c6269;
   --clr-bg-dark: #012f34;
-  
+  --clr-bg-veryDark: #002529;
   --clr-bg-social: #004047;
-  --clr-accent: #f67e7e;
-  --clr-text: white;
-  --clr-text-gray: #98a7a9;
 
+  --clr-accent: #f67e7e;
+  --clr-text-gray: #98a7a9;
   --clr-line: #79c8c7;
 }
+
 * {
   font-family: "Livvic", sans-serif;
 }
