@@ -1,0 +1,122 @@
+.section_directors {
+  background-color: var(--clr-bg-social);
+  color: white;
+  text-align: center;
+  padding: 7rem 1.5rem;
+  background-image: url("/bg-pattern-about-2-contact-1.svg"),
+    url("/bg-pattern-home-4-about-3.svg");
+  background-repeat: no-repeat;
+  background-position: top -100px left -100px, bottom right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.section_directors h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.directorCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 1rem;
+  width: 95%;
+}
+
+.directorCard {
+  background-color: var(--clr-bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-block: 3rem;
+  padding-inline: 1rem;
+  width: 95%;
+  height: 10rem;
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flipped {
+  background-color: var(--clr-bg-veryDark);
+
+  padding-block: 3rem;
+  width: 95%;
+  height: 10rem;
+}
+.directorCard > img {
+  border: 2px solid var(--clr-line);
+  border-radius: 50%;
+  width: 96px;
+  margin-bottom: 0.5rem;
+}
+.directorCard h3 {
+  margin: 0;
+  color: var(--clr-line);
+}
+
+.directorSocials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+
+.cardBtn {
+  background-color: var(--clr-accent);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  cursor: pointer;
+}   
+.cardBtn:hover {
+    background-color: var(--clr-line);
+}
+.cardBtnFlipped {
+  background-color: var(--clr-line);
+}
+.cardBtnFlipped:hover {
+    background-color: var(--clr-accent);
+}
+
+@media (min-width: 600px) {
+  .section_directors {
+    background-position: top left -100px, bottom right;
+    flex-wrap: wrap;
+  }
+  .directorCardContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .directorCard {
+    flex: 0 1 calc(33.33% - 1rem);
+    max-width: 20rem;
+  }
+}
+@media (min-width: 800px) {
+    .directorCardContainer {
+        justify-content: center;
+    }
+}
+@media (min-width: 1100px) {
+
+    .directorCardContainer{
+        justify-content: center;
+    }
+}
