@@ -1,10 +1,11 @@
 import Footer from "../components/Footer/Footer";
+import Form from "../components/Form/Form";
 import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <>
       <section className={styles.contactContainer}>
-        <div>
+        <div className={styles.contactLeft}>
           <h1>Contact</h1>
           <h2 className={styles.accent}>Ask us about</h2>
           <div className={styles.askCard}>
@@ -21,7 +22,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div>Form stuff</div>
+        <Form />
       </section>
 
       <Footer />

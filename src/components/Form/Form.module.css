@@ -1,0 +1,36 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.contactForm input,
+textarea {
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--clr-line);
+  color: white;
+  font-size: 1rem;
+
+}
+.contactForm input::placeholder,
+textarea::placeholder {
+  color: var(--clr-line);
+  font-size: 1rem;
+}
+
+.submitBtn {
+  background-color: white;
+  color: var(--clr-bg-dark);
+  align-self: flex-start;
+}
+
+
+@media (min-width:600px) {
+    .contactForm {
+        padding-inline: 1.7rem;
+    }
+}
+
